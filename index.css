@@ -58,6 +58,12 @@ a {
     border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
+.element .details b {
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 4px;
+}
 
 /* ---- BUTTONS ---- */
 button {
@@ -77,3 +83,4 @@ button:active {
     color: #000000;
     background-color: rgba(0,255,255,0.75);
 }
+
