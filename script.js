@@ -136,7 +136,7 @@ function init() {
             const img = document.createElement("img");
             img.src = photo;
             img.style.width = "100%";
-            img.style.height = "170px";
+            img.style.height = "230px";
             img.style.objectFit = "cover";
             el.appendChild(img);
         }
@@ -316,5 +316,6 @@ function animate() {
 function render() {
     renderer.render(scene, camera);
 }
+
 
 
