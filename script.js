@@ -131,23 +131,15 @@ function init() {
         }
 
 
-
-
         // --- PHOTO ---
         if (photo) {
             const img = document.createElement("img");
             img.src = photo;
             img.style.width = "100%";
-            img.style.height = "80px";
+            img.style.height = "130px";
             img.style.objectFit = "cover";
             el.appendChild(img);
         }
-
-        // FIRST LETTER
-        const symbol = document.createElement("div");
-        symbol.className = "symbol";
-        symbol.textContent = name ? name[0] : "?";
-        el.appendChild(symbol);
 
 
         // DETAILS
@@ -324,3 +316,4 @@ function animate() {
 function render() {
     renderer.render(scene, camera);
 }
+
