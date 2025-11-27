@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>3D Table Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google OAuth -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- Three.js Import Map -->
+    <script type="importmap">
+    {
+         "imports": {
+            "three": "./build/three.module.js",
+            "three/addons/": "./jsm/"
+        }
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Google Login Button -->
+    <div id="g_id_onload"
+        data-client_id="175957949646-v6e0hqaamb45a4cosg470kfd3g21agju.apps.googleusercontent.com"
+        data-context="signin"
+        data-callback="handleLogin">
+    </div>
+
+    <div class="g_id_signin" 
+        data-type="standard" 
+        data-size="large">
+    </div>
+
+    <!-- 3D Container -->
+    <div id="container"></div>
+
+    <!-- Layout Buttons -->
+    <div id="menu">
+        <button id="table">TABLE</button>
+        <button id="sphere">SPHERE</button>
+        <button id="helix">HELIX</button>
+        <button id="grid">GRID</button>
+    </div>
+
+    <!-- Your JavaScript -->
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
