@@ -1,8 +1,10 @@
+yes this is my new css btw:
+
 body {
     background: black !important;
 }
 
-/* Hide 3D scene & menu until login */
+/* Hide 3D scene and menu until login */
 #container,
 #menu {
     display: none;
@@ -21,8 +23,8 @@ a {
 
 /* ---- ELEMENT CARD ---- */
 .element {
-    width: 200px;               /* slightly bigger card */
-    height: 300px;
+    width: 180px;
+    height: 260px;
     box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
     border: 1px solid rgba(127,255,255,0.25);
     font-family: Helvetica, sans-serif;
@@ -31,7 +33,6 @@ a {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    background: transparent;
 }
 
 /* Hover effect */
@@ -40,30 +41,22 @@ a {
     border: 1px solid rgba(127,255,255,0.75);
 }
 
-/* ---- PHOTO ---- */
+
+.element .details {
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.2;  
+    padding: 3px;     
+}
+
 .element img {
     width: 100%;
-    height: 140px;           
+    height: 320px;   
     object-fit: cover;
-    display: block;
-}
-
-/* ---- DETAILS ---- */
-.element .details {
-    position: relative;       
-    padding: 8px 5px;
-    font-size: 13px;
-    color: rgba(255,255,255,0.85);
-    line-height: 1.3;
-    margin-top: 4px;          
-}
-
-/* Bold the NAME only */
-.element .details b {
-    font-size: 15px;
-    font-weight: 700;
-    display: block;
-    margin-bottom: 4px;
 }
 
 /* ---- BUTTONS ---- */
